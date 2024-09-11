@@ -24,12 +24,29 @@
       .section1 {
         width: 70%;
         height: 12rem;
-        background-color: rgb(65, 125, 228);
+        /* background-color: rgb(65, 125, 228); */
+        background: #56ccf2; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #2f80ed,
+          #56ccf2
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #2f80ed,
+          #56ccf2
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         padding: 10px;
+        box-shadow: 4.6px 4.4px 10px rgba(0, 0, 0, 0.085),
+          37px 35px 80px rgba(0, 0, 0, 0.17);
+      }
+      .section1 h1,
+      h3 {
+        color: white;
       }
 
       .profile-img-section {
@@ -58,7 +75,7 @@
         width: 70%;
         height: 12rem;
         /* background-color: aquamarine; */
-        border: 1px solid rgb(65, 125, 228);
+        /* border: 1px solid rgb(65, 125, 228); */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -70,7 +87,7 @@
         width: 70%;
         height: 20rem;
         /* background-color: aquamarine; */
-        border: 1px solid rgb(65, 125, 228);
+        /* border: 1px solid rgb(65, 125, 228); */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -82,7 +99,7 @@
         width: 70%;
         height: 15rem;
         /* background-color: aquamarine; */
-        border: 1px solid rgb(65, 125, 228);
+        /* border: 1px solid rgb(65, 125, 228); */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -110,8 +127,7 @@
 
       .companies {
         font-weight: bold;
-
-        color: aquamarine;
+        color: rgb(65, 125, 228);
       }
     </style>
   </head>
@@ -164,7 +180,7 @@
       </table>
     </div>
     <div class="section4">
-      <h1 class="section-title">InterShips</h1>
+      <h1 class="section-title">InternShips</h1>
       <p>
         <span class="companies">Tech UC</span>
         Aug 27 2022 to Sept 5 2022 Learned About the IOT Application and their
