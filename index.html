@@ -64,14 +64,17 @@
       .profile-img {
         height: 8rem;
         width: 8rem;
-        border-radius: 75%;
+        background: rgba(255, 255, 255, 0.45);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border-radius: 75px;
+        border: 8px solid rgba(255, 255, 255, 0.18);
       }
 
       .section2 {
         width: 70%;
         height: 12rem;
-        /* background-color: aquamarine; */
-        /* border: 1px solid rgb(65, 125, 228); */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -177,6 +180,65 @@
       .text-white {
         color: white;
       }
+
+      /* From Uiverse.io by alexmaracinaru */
+      .cta {
+        position: relative;
+        margin: auto;
+        padding: 12px 18px;
+        transition: all 0.2s ease;
+        border: none;
+        background: none;
+        cursor: pointer;
+      }
+
+      .cta:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        border-radius: 50px;
+        background: #b1dae7;
+        width: 45px;
+        height: 45px;
+        transition: all 0.3s ease;
+      }
+
+      .cta span {
+        position: relative;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        color: #234567;
+      }
+
+      .cta svg {
+        position: relative;
+        top: 0;
+        margin-left: 10px;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke: #234567;
+        stroke-width: 2;
+        transform: translateX(-5px);
+        transition: all 0.3s ease;
+      }
+
+      .cta:hover:before {
+        width: 100%;
+        background: #b1dae7;
+      }
+
+      .cta:hover svg {
+        transform: translateX(0);
+      }
+
+      .cta:active {
+        transform: scale(0.95);
+      }
     </style>
     <link
       rel="stylesheet"
@@ -190,7 +252,7 @@
     <div class="section1">
       <div class="profile-img-section">
         <img
-          src="./assets/img/close-up-kitten-surrounded-by-flowers.jpg"
+          src="./assets/img/Mahalakshmi_Profile.jpg"
           alt=""
           class="profile-img"
         />
@@ -259,13 +321,19 @@
     </div>
     <div class="section6">
       <a href="tel:+91 9943077813">
-        <i class="fa-solid fa-phone text-white"></i>
+        <button class="cta">
+          <span><i class="fa-solid fa-phone"></i></span>
+        </button>
       </a>
       <a href="mailto:mahakgm0827@gmail.com">
-        <i class="fa-solid fa-envelope text-white"></i>
+        <button class="cta">
+          <span><i class="fa-solid fa-envelope"></i></span>
+        </button>
       </a>
       <a href="https://www.linkedin.com/" target="_blank">
-        <i class="fa-brands fa-linkedin-in text-white"></i>
+        <button class="cta">
+          <span><i class="fa-brands fa-linkedin-in"></i></span>
+        </button>
       </a>
     </div>
   </body>
